@@ -5,31 +5,28 @@ require 'rack'
 require 'rack/utils'
 
 server = TCPServer.new('0.0.0.0', 3000)
+def balance
+  @start_balance = 100
+  if @balance = File.exist?('./data/balance.txt')
+    file = File.open('./data/balance.txt', 'r')
+    @balance = File.read('./data/balance.txt').to_i
+  else puts @balance == @start_balance
+  end
+end
+
+def deposit_plus
+ end
+
 class App
-
-  def balance
-    @start_balance = 100
-    if @balance = File.exist?('./data/balance.txt')
-      file = File.open('./data/balance.txt', 'r')
-      @balance = File.read('./data/balance.txt').to_i
-    else puts @balance == @start_balance
-    end
-  end
-
-  def deposit_plus
-
-  end
-
   def call(env)
     req = Rack::Request.new(env)
-
     case req.path
-    when '/balance'
-      [200, { 'Content-Type' => 'text/html', 'encoding' => 'utf-8' }, ["Hello, world #{balance}"]]
-    when '/hi'
-      [200, { 'Content-Type' => 'text/html' }, ["#{}"]]
-    when '/bye'
-      [200, { 'Content-Type' => 'text/html' }, ['Bye']]
+    when '/'
+            [200, { 'Content-Type' => 'text/html', 'encoding' => 'utf-8' }, ["Your start balance is #{balance}"]]
+    when '/deposit'
+            [200, { 'Content-Type' => 'text/html' }, ["What sum do you want to add to your balance?"]]
+    when '/withdraw'
+      [200, { 'Content-Type' => 'text/html' }, ['What sum do you want to withdraw from your balance?']]
     else
       [404, { 'Content-Type' => 'text/html' }, ['Not found']]
     end
