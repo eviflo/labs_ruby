@@ -151,3 +151,4 @@ end
 router = Router.new
 
 router.init
+#extend Resource позволяет нам использовать метод connection без создания инстанса. Плюс область видимости данного метода расширяется
