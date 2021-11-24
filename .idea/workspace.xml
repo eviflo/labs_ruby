@@ -4,8 +4,10 @@
     <option name="SPLITTER_PROPORTION" value="0.604119" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f46fce34-0971-482e-8c05-5a5a1fa2ab88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lab1.rb" beforeDir="false" />
+    <list default="true" id="f46fce34-0971-482e-8c05-5a5a1fa2ab88" name="Default Changelist" comment="LABS READY-added comment to &quot;posts.rb&quot;">
+      <change afterPath="$PROJECT_DIR$/lab2/lab2_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2.rb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +139,7 @@
       <workItem from="1626953539388" duration="14487000" />
       <workItem from="1626989706729" duration="634000" />
       <workItem from="1626990343482" duration="15563000" />
-      <workItem from="1637692816725" duration="10841000" />
+      <workItem from="1637692816725" duration="18739000" />
     </task>
     <task id="LOCAL-00001" summary="PostController ready">
       <created>1626907057114</created>
