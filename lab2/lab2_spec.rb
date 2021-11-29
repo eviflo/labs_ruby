@@ -5,16 +5,12 @@ require './lab2.rb'
 
 RSpec.describe 'main_methods' do
   it 'x=20' do
-    x = 20
-    allow_any_instance_of(Kernel).to receive(:gets).and_return('20', '45')
-        expect(foobar).to eq('x=20')
+    expect(foobar(20, 48)).to eq(y = 48)
   end
   it 'y=20' do
-    allow_any_instance_of(Kernel).to receive(:gets).and_return('45', '20')
-    expect(foobar).to eq('y=20')
+    expect(foobar(37, 20)).to eq(37)
   end
   it 'x!=20 y!=20' do
-    allow_any_instance_of(Kernel).to receive(:gets).and_return('37', '12')
-    expect(foobar).to eq('Neither of them is 20, the sum of the numbers is 37+12=49')
+    expect(foobar(98, 75)).to eq(173)
   end
 end
