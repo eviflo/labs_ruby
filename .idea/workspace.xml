@@ -4,11 +4,7 @@
     <option name="SPLITTER_PROPORTION" value="0.604119" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f46fce34-0971-482e-8c05-5a5a1fa2ab88" name="Default Changelist" comment="LABS READY-added comment to &quot;posts.rb&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/lab2.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/lab2.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/lab2_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/lab2_spec.rb" afterDir="false" />
-    </list>
+    <list default="true" id="f46fce34-0971-482e-8c05-5a5a1fa2ab88" name="Default Changelist" comment="LABS READY-added comment to &quot;posts.rb&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +137,7 @@
       <workItem from="1626990343482" duration="15563000" />
       <workItem from="1637692816725" duration="19275000" />
       <workItem from="1637855966367" duration="920000" />
-      <workItem from="1638181226738" duration="2740000" />
+      <workItem from="1638181226738" duration="3048000" />
     </task>
     <task id="LOCAL-00001" summary="PostController ready">
       <created>1626907057114</created>
