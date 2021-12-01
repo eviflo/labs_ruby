@@ -4,7 +4,7 @@ require 'rspec'
 require './lab2.rb'
 
 RSpec.describe 'main_methods' do
-  it 'x=20' do
+  it 'ends with cs' do
     expect(foobar(20, 48)).to eq(y = 48)
   end
   it 'y=20' do
