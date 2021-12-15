@@ -1,18 +1,33 @@
+# frozen_string_literal: true
+
 require 'rspec'
-require './lab5.rb'
+require './lab5'
 
-describe "stones_management" do
-  it 'How to mock File.open for write with rspec 3.4' do
-    @buffer = StringIO.new()
-    @filename = "somefile.txt"
-    @content = "the content fo the file"
-    allow(File).to receive(:open).with(@filename,'w').and_yield( @buffer )
-
-    # call the function that writes to the file
-    File.open(@filename, 'w') {|f| f.write(@content)}
-
-    # reading the buffer and checking its content.
-    expect(@buffer.string).to eq(@content)
+RSpec.describe StonesManagement do
+  let (:stones) do
+    stones= File.readlines("./data2/stones.txt").map(&:chomp)
   end
 
+  #before { File.write(FILE_OPENED, string) }
+  subject {StonesManagement}
+  it 'self.index' do
+    expect(StonesManagement.index).to eq(stones)
+  end
+  it 'self.find(id)' do
+    id = 4
+    expect(StonesManagement.find(4)).to eq("Afghanite\n")
+  end
+  it 'self.where(pattern)' do
+    expect(StonesManagement.where("Afghanite\n")).to eq(4)
+  end
+  it 'self.update(id, text)' do
+    id = 6
+    text = "some_queer_stone"
+    expect(StonesManagement.update(6, "some_queer_stone")).to eq("Файл обновлен, название нового камня под номером 6 теперь some_queer_stone\n")
+  end
+  it 'self.delete(id)' do
+    id = 8
+    expect(StonesManagement.delete(8)).to eq("\n")
+  end
 end
+
